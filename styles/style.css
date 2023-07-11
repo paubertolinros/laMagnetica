@@ -1,0 +1,303 @@
+/*-----GENERAL SEETINGS------*/
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: var(--primary-white);
+  color: var(--primary-black)
+}
+
+:root {
+  --primary-orange: #F19206;
+  --primary-blue: #3D9CA4;
+  --primary-pink: #E50280;
+  --primary-white: #fbfbfb;
+  --primary-black: #131313;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+button, a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+span {
+  font-weight: 700;
+  color: var(--primary-orange);
+}
+
+/*-----HEADER------*/
+header {
+  padding: 2rem;
+}
+
+header section.lang-section {
+  width: 100%;
+}
+
+header section.lang-section ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+header section.lang-section ul li:nth-child(1) {
+  color: var(--primary-pink);
+  font-weight: 700;
+}
+
+header section.lang-section ul li:hover {
+  color: var(--primary-pink);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+header section.logo-menu-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+header section.logo-menu-section img {
+  width: 20rem;
+}
+
+header section.logo-menu-section ul {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+header section.logo-menu-section ul li {
+  font-size: 25px;
+}
+
+header section.logo-menu-section ul li:hover {
+  font-weight: 700;
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+
+/*-----BANNER  SECTION------*/
+section.banner img {
+  width: 100%;
+}
+
+/*-----GUM TYPE SECTION------*/
+section.health-confectionery-buttons-section {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 5rem 2rem;
+}
+
+section.health-confectionery-buttons-section div.gum-type {
+  width: 45%;
+  height: 7rem;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+section.health-confectionery-buttons-section div.gum-type div.text-info-type-gum {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section div.gum-type:nth-child(1) {
+  border: 3px solid var(--primary-pink);
+}
+
+section div.gum-type:nth-child(1):hover {
+  background-color: var(--primary-pink);
+  color: var(--primary-white);
+}
+
+section div.gum-type:nth-child(2) {
+  border: 3px solid var(--primary-blue);
+}
+
+section div.gum-type:nth-child(2):hover {
+  background-color: var(--primary-blue);
+  color: var(--primary-white)
+}
+
+section div.gum-type .icon-gum-type img {
+  width: 6rem;
+}
+
+.health {
+  color: var(--primary-blue)
+}
+
+.confectionery {
+  color: var(--primary-pink)
+}
+
+/*-----FEATURED INFORMATION SECTION------*/
+section.featured-information {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.pink {
+  color: var(--primary-pink)
+}
+
+.orange {
+  color: var(--primary-orange)
+}
+
+.blue {
+  color: var(--primary-blue)
+}
+
+section.featured-information div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+section.featured-information div {
+  text-align: center;
+}
+
+section.featured-information div h2 {
+  font-weight: 700;
+}
+
+/*-----SUSTAINABILITY SECTION------*/
+section.sustainability-section {
+  margin: 6rem 4rem 6rem 4rem;
+}
+
+section.sustainability-section h1{
+  text-align: center;
+}
+
+section.sustainability-section div.info-sustainability {
+  text-align: center;
+  margin: 2rem 0 5rem 0;
+  padding: 0 10rem;
+}
+
+section.sustainability-section div.icons-info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+section.sustainability-section div.icons-info-container div.icon-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20rem;
+  gap: 1rem;
+  text-align: center;
+}
+
+section.sustainability-section div.icons-info-container div.icon-info img {
+  width: 7rem;
+}
+
+section.sustainability-section div.icons-info-container div.icon-info h2 {
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+
+/*-----EXPERIENCE SECTION------*/
+section.know-how-and-experience-section {
+  background-image: url('/images/bg-know-how.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+section.know-how-and-experience-section button {
+  border: 3px solid var(--primary-pink);
+  border-radius: 15px;
+  padding: 2rem 5rem;
+  background-color: transparent;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: var(--primary-pink);
+  font-weight: 700;
+}
+
+section.know-how-and-experience-section button:hover {
+  background-color: var(--primary-pink);
+  color: var(--primary-white);
+}
+
+/*-----TESTIMONIAL SECTION------*/
+section.testimonials-container {
+  display: flex;
+  padding: 0 5rem 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  margin: 6rem 0rem;
+}
+
+section.testimonials-container div.div-testimonials-container {
+  box-shadow: 1px 1px 10px 1px var(--primary-blue);
+  border-radius: 10px;
+  width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 4rem
+}
+
+section.testimonials-container div.div-testimonials-container div.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+section.testimonials-container .arrow img {
+  width: 3rem;
+}
+
