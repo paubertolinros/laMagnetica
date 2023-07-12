@@ -105,8 +105,26 @@ section.banner img {
   width: 100%;
 }
 
+.banner {
+  position: relative;
+  margin-bottom: 25%;
+}
+
+.banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.banner-img.active {
+  opacity: 1;
+}
+
 /*-----GUM TYPE SECTION------*/
 section.health-confectionery-buttons-section {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 3rem;
